@@ -132,6 +132,14 @@ export function ListActionPanel(props: ActionListPanelProps) {
             />
           }
         />
+        {["Youdao Translate", "Youdao Dictionary"].includes(queryType) ? (
+          <Action.OpenInBrowser
+            title="Add to Wordbook"
+            icon={getQueryTypeIcon(queryType)}
+            shortcut={{ modifiers: ["cmd"], key: "d" }}
+            url={`https://youdao.com/c-add-wordbook?lan=${fromLanguage}&word=${word}`}
+          />
+        ) : null}
         <CurrentTypeWebQueryAction queryType={queryType} queryWordInfo={queryWordInfo} />
       </ActionPanel.Section>
 

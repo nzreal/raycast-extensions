@@ -1,0 +1,44 @@
+{
+    "folders": [
+        {
+            "path": "./extensions/easydict",
+            "name": "Easydict"
+        }
+    ],
+    "settings": {
+        "files.exclude": {
+            "**/.git": true,
+            "**/.DS_Store": true,
+            "node_modules": false,
+            "dist": false,
+            ".build": true,
+            ".raycast-swift-build": true,
+            ".swiftpm": true,
+            "compiled_raycast_swift": true
+        },
+        "search.exclude": {
+            "**/node_modules": true,
+            "**/dist": true
+        },
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "[typescript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[javascript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[json]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[markdown]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
+    },
+    "extensions": {
+        "recommendations": [
+            "esbenp.prettier-vscode",
+            "dbaeumer.vscode-eslint"
+        ]
+    }
+}
